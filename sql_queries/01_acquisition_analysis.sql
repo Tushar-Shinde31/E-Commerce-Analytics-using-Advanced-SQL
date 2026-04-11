@@ -43,7 +43,8 @@ WHERE YEAR(registration_date) = YEAR(CURDATE())
 AND WEEK(registration_date,1) = WEEK(CURDATE(), 1);
 
 
--- Q.3 Create a report containing the 2017 monthly registration counts. Show the registration_month and registration_count columns. Order the results by month.
+/* Q.3 Create a report containing the 2017 monthly registration counts. 
+ 	   Show the registration_month and registration_count columns. Order the results by month. */
 SELECT MONTH(registration_date) as registration_month, 
 	COUNT(*) as registration_count
 FROM customers 
@@ -52,7 +53,8 @@ GROUP BY MONTH(registration_date)
 ORDER BY registration_month;
 
 
--- Q.4 Find the registration count for each month in each year. Show the following columns: registration_year, registration_month, and registration_count. Order the results by year and month.
+/* -- Q.4 Find the registration count for each month in each year. Show the following columns: 
+		  registration_year, registration_month, and registration_count. Order the results by year and month. */
 SELECT YEAR(registration_date) AS registrtion_year,
         MONTH(registration_date) AS registration_month,
         COUNT(*) as registration_count
@@ -92,7 +94,9 @@ GROUP BY ch.channel_name, reg_year
 ORDER BY reg_year;
 
 
--- Q.7 Create a report to show the weekly counts of registration in 2017, based on the customer country. Show the following columns: registration_week, country, and registration_count. Order the results by week.
+/* -- Q.7 Create a report to show the weekly counts of registration in 2017, based on the customer country. 
+Show the following columns: registration_week, country, and registration_count. 
+Order the results by week.  */
 SELECT WEEK(registration_date) registration_week,country,
 	COUNT(registration_date) registration_count
 FROM customers
