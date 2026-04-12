@@ -1,23 +1,23 @@
-📊 Acquisition Insights
+1. Acquisition Insights
 Customer registrations increased steadily over time
 Organic Search contributes major share of users
 
 
-💰 Conversion Insights
+2. Conversion Insights
 Conversion rate varies significantly across channels
 Some channels bring users but low conversion
 
 
-⏱️ Engagement Insights
+3. Engagement Insights
 Faster first purchase = higher engagement
 Delay in first purchase increases churn risk
 
 
-🔁 Retention Insights
+4. Retention Insights
 Active users drop significantly after 30 days
 Retention varies by geography
 
 
-❌ Churn Insights
+5. Churn Insights
 High churn observed within first 45–60 days
 Early engagement is critical to reduce churn
